@@ -1,6 +1,6 @@
 # AIVA-rank-bench
 
-**AIVA** (AI Variant Analysis) is a clinical variant interpretation benchmarking framework developed by [Mamidi Health (MHSPL)](https://github.com/MHSPL). This repository contains reproducible pipelines, scoring scripts, and result datasets used to evaluate AIVA's performance against established variant prioritization tools.
+**AIVA** (AI Variant Analysis) is a clinical variant interpretation tool developed by [Mamidi Health (MHSPL)](https://github.com/MHSPL). This repository contains reproducible pipelines, scoring scripts, and result datasets used to evaluate AIVA's performance against established variant prioritization tools.
 
 ***
 
@@ -10,7 +10,6 @@ AIVA-rank-bench benchmarks AIVA against state-of-the-art clinical variant interp
 
 - **Exomiser** – phenotype-driven variant prioritization
 - **LIRICAL** – likelihood ratio–based variant interpretation
-- **InterVar** – ACMG/AMP evidence-based variant classification
 
 The benchmark evaluates variant ranking accuracy, ACMG classification concordance, and rare disease diagnostic yield across curated patient cohorts.
 
@@ -52,7 +51,6 @@ install.packages(c("ggplot2", "dplyr", "tidyr", "readr"))
 |------|---------|------|
 | Exomiser | 13.x | https://github.com/exomiser/Exomiser |
 | LIRICAL | 2.x | https://github.com/TheJacksonLaboratory/LIRICAL |
-| InterVar | 2.x | https://github.com/WGLab/InterVar |
 
 ***
 

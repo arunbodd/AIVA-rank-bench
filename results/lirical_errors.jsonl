@@ -1,0 +1,73 @@
+{"patient_id": 39563, "status": "error", "elapsed_s": 75.6, "error": "JSON parse error: Unterminated string starting at: line 42708 column 21 (char 1605787)"}
+{"patient_id": 22551, "status": "error", "elapsed_s": 59.6, "error": "Output JSON not created. stdout: "}
+{"patient_id": 18090, "status": "error", "elapsed_s": 57.5, "error": "Output JSON not created. stdout: "}
+{"patient_id": 34570, "status": "error", "elapsed_s": 54.2, "error": "JSON parse error: Unterminated string starting at: line 347974 column 21 (char 13220095)"}
+{"patient_id": 40997, "status": "error", "elapsed_s": 91.2, "error": "Output JSON not created. stdout: "}
+{"patient_id": 26511, "status": "error", "elapsed_s": 33.7, "error": "Output JSON not created. stdout: "}
+{"patient_id": 17333, "status": "error", "elapsed_s": 64.2, "error": "Output JSON not created. stdout: "}
+{"patient_id": 22560, "status": "error", "elapsed_s": 56.7, "error": "Output JSON not created. stdout: "}
+{"patient_id": 36447, "status": "error", "elapsed_s": 56.6, "error": "Output JSON not created. stdout: "}
+{"patient_id": 29896, "status": "error", "elapsed_s": 58.9, "error": "Output JSON not created. stdout: "}
+{"patient_id": 35523, "status": "error", "elapsed_s": 39.1, "error": "Output JSON not created. stdout: "}
+{"patient_id": 5965, "status": "error", "elapsed_s": 47.1, "error": "JSON parse error: Expecting property name enclosed in double quotes: line 2514 column 1 (char 96571)"}
+{"patient_id": 12599, "status": "error", "elapsed_s": 43.2, "error": "JSON parse error: Expecting property name enclosed in double quotes: line 6028 column 1 (char 224385)"}
+{"patient_id": 5182, "status": "error", "elapsed_s": 59.4, "error": "Output JSON not created. stdout: "}
+{"patient_id": 7293, "status": "error", "elapsed_s": 82.6, "error": "JSON parse error: Expecting value: line 305629 column 23 (char 11617086)"}
+{"patient_id": 6614, "status": "error", "elapsed_s": 48.4, "error": "Output JSON not created. stdout: "}
+{"patient_id": 40238, "status": "error", "elapsed_s": 86.2, "error": "Output JSON not created. stdout: "}
+{"patient_id": 40397, "status": "error", "elapsed_s": 79.1, "error": "Output JSON not created. stdout: "}
+{"patient_id": 38103, "status": "error", "elapsed_s": 53.8, "error": "Output JSON not created. stdout: "}
+{"patient_id": 8692, "status": "error", "elapsed_s": 58.2, "error": "Output JSON not created. stdout: "}
+{"patient_id": 19378, "status": "error", "elapsed_s": 55.4, "error": "Output JSON not created. stdout: "}
+{"patient_id": 2509, "status": "error", "elapsed_s": 56.1, "error": "Output JSON not created. stdout: "}
+{"patient_id": 13535, "status": "error", "elapsed_s": 54.0, "error": "JSON parse error: Expecting property name enclosed in double quotes: line 804959 column 1 (char 30338047)"}
+{"patient_id": 25358, "status": "error", "elapsed_s": 69.3, "error": "JSON parse error: Expecting ',' delimiter: line 3406 column 65 (char 128823)"}
+{"patient_id": 30592, "status": "error", "elapsed_s": 58.8, "error": "JSON parse error: Expecting property name enclosed in double quotes: line 997705 column 1 (char 38232219)"}
+{"patient_id": 41667, "status": "error", "elapsed_s": 48.6, "error": "Output JSON not created. stdout: "}
+{"patient_id": 13200, "status": "error", "elapsed_s": 51.2, "error": "Output JSON not created. stdout: "}
+{"patient_id": 20240, "status": "error", "elapsed_s": 64.3, "error": "Output JSON not created. stdout: "}
+{"patient_id": 35898, "status": "error", "elapsed_s": 61.1, "error": "Output JSON not created. stdout: "}
+{"patient_id": 1121, "status": "error", "elapsed_s": 52.4, "error": "Output JSON not created. stdout: "}
+{"patient_id": 17759, "status": "error", "elapsed_s": 62.5, "error": "Output JSON not created. stdout: "}
+{"patient_id": 25960, "status": "error", "elapsed_s": 51.8, "error": "Output JSON not created. stdout: "}
+{"patient_id": 5171, "status": "error", "elapsed_s": 45.2, "error": "Output JSON not created. stdout: "}
+{"patient_id": 10792, "status": "error", "elapsed_s": 67.6, "error": "Output JSON not created. stdout: "}
+{"patient_id": 38336, "status": "error", "elapsed_s": 59.6, "error": "Output JSON not created. stdout: "}
+{"patient_id": 6960, "status": "error", "elapsed_s": 39.1, "error": "Output JSON not created. stdout: "}
+{"patient_id": 27850, "status": "error", "elapsed_s": 44.4, "error": "Output JSON not created. stdout: "}
+{"patient_id": 25023, "status": "error", "elapsed_s": 73.4, "error": "JSON parse error: Expecting value: line 1 column 1 (char 0)"}
+{"patient_id": 13681, "status": "error", "elapsed_s": 75.9, "error": "Output JSON not created. stdout: "}
+{"patient_id": 5192, "status": "error", "elapsed_s": 55.4, "error": "Output JSON not created. stdout: "}
+{"patient_id": 40775, "status": "error", "elapsed_s": 39.2, "error": "Output JSON not created. stdout: "}
+{"patient_id": 24176, "status": "error", "elapsed_s": 88.5, "error": "Output JSON not created. stdout: "}
+{"patient_id": 7231, "status": "error", "elapsed_s": 43.5, "error": "Output JSON not created. stdout: "}
+{"patient_id": 22683, "status": "error", "elapsed_s": 84.9, "error": "Output JSON not created. stdout: "}
+{"patient_id": 28047, "status": "error", "elapsed_s": 106.4, "error": "Output JSON not created. stdout: "}
+{"patient_id": 9824, "status": "error", "elapsed_s": 58.6, "error": "Output JSON not created. stdout: "}
+{"patient_id": 11367, "status": "error", "elapsed_s": 51.4, "error": "JSON parse error: Expecting value: line 1 column 1 (char 0)"}
+{"patient_id": 26534, "status": "error", "elapsed_s": 41.5, "error": "Output JSON not created. stdout: "}
+{"patient_id": 40628, "status": "error", "elapsed_s": 55.0, "error": "Output JSON not created. stdout: "}
+{"patient_id": 41387, "status": "error", "elapsed_s": 65.0, "error": "Output JSON not created. stdout: "}
+{"patient_id": 1983, "status": "error", "elapsed_s": 66.5, "error": "JSON parse error: Expecting value: line 1 column 1 (char 0)"}
+{"patient_id": 1897, "status": "error", "elapsed_s": 58.1, "error": "Output JSON not created. stdout: "}
+{"patient_id": 5639, "status": "error", "elapsed_s": 68.3, "error": "JSON parse error: Unterminated string starting at: line 499812 column 21 (char 18897961)"}
+{"patient_id": 2516, "status": "error", "elapsed_s": 35.9, "error": "JSON parse error: Expecting value: line 266361 column 14 (char 10043071)"}
+{"patient_id": 36490, "status": "error", "elapsed_s": 46.5, "error": "JSON parse error: Expecting value: line 358349 column 14 (char 13834711)"}
+{"patient_id": 8891, "status": "error", "elapsed_s": 51.0, "error": "JSON parse error: Expecting property name enclosed in double quotes: line 481239 column 1 (char 18104162)"}
+{"patient_id": 42286, "status": "error", "elapsed_s": 64.4, "error": "Output JSON not created. stdout: "}
+{"patient_id": 25706, "status": "error", "elapsed_s": 63.3, "error": "Output JSON not created. stdout: "}
+{"patient_id": 34462, "status": "error", "elapsed_s": 46.4, "error": "Output JSON not created. stdout: "}
+{"patient_id": 35236, "status": "error", "elapsed_s": 48.2, "error": "JSON parse error: Expecting ':' delimiter: line 3975 column 20 (char 152469)"}
+{"patient_id": 15184, "status": "error", "elapsed_s": 56.7, "error": "JSON parse error: Expecting property name enclosed in double quotes: line 351421 column 1 (char 13419908)"}
+{"patient_id": 34649, "status": "error", "elapsed_s": 57.5, "error": "Output JSON not created. stdout: "}
+{"patient_id": 16470, "status": "error", "elapsed_s": 51.2, "error": "JSON parse error: Expecting property name enclosed in double quotes: line 308112 column 1 (char 11966997)"}
+{"patient_id": 19836, "status": "error", "elapsed_s": 49.7, "error": "Output JSON not created. stdout: "}
+{"patient_id": 10894, "status": "error", "elapsed_s": 48.0, "error": "Output JSON not created. stdout: "}
+{"patient_id": 15970, "status": "error", "elapsed_s": 55.3, "error": "Output JSON not created. stdout: "}
+{"patient_id": 4145, "status": "error", "elapsed_s": 63.7, "error": "Output JSON not created. stdout: "}
+{"patient_id": 30184, "status": "error", "elapsed_s": 38.5, "error": "JSON parse error: Expecting value: line 26069 column 23 (char 950743)"}
+{"patient_id": 16509, "status": "error", "elapsed_s": 57.3, "error": "JSON parse error: Expecting value: line 335900 column 14 (char 12726957)"}
+{"patient_id": 39784, "status": "error", "elapsed_s": 37.1, "error": "Output JSON not created. stdout: "}
+{"patient_id": 247, "status": "error", "elapsed_s": 38.9, "error": "Output JSON not created. stdout: "}
+{"patient_id": 27762, "status": "error", "elapsed_s": 34.5, "error": "Output JSON not created. stdout: "}
+{"patient_id": 27610, "status": "error", "elapsed_s": 46.3, "error": "Output JSON not created. stdout: "}

@@ -1,1 +1,10 @@
 README_Reproducibility.md
+
+# R session history
+.Rhistory
+.RData
+.Rproj.user/
+
+# macOS metadata
+.DS_Store
+**/.DS_Store

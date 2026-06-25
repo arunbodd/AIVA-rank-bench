@@ -272,11 +272,18 @@ def main():
 
     validate_setup()
 
-    # Load manifest
+    # Load manifest. vcf_path may be repo-relative — resolve against REPO_ROOT
+    # and re-check existence on the current machine.
     entries = []
     with open(MANIFEST_PATH) as f:
         for line in f:
-            entries.append(json.loads(line))
+            entry = json.loads(line)
+            vp = Path(entry["vcf_path"])
+            if not vp.is_absolute():
+                vp = REPO_ROOT / vp
+            entry["vcf_path"] = str(vp)
+            entry["vcf_exists"] = vp.exists()
+            entries.append(entry)
 
     if args.limit:
         entries = entries[: args.limit]

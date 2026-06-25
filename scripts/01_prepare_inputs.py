@@ -26,11 +26,12 @@ from pathlib import Path
 
 # ── paths ─────────────────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).resolve().parent.parent
-AIVA_ROOT = Path("/data/AIVA_Benchmarking/AIVA-var-bench/Simulated_Datasets")
-INPUT_JSONL = AIVA_ROOT / "data" / "final_extracted_broad_cat_v2_inputs.jsonl"
-VCF_DIR = AIVA_ROOT / "data" / "generated_vcfs" / "simulated"
-RESULTS_DIR = REPO_ROOT / "results"
 INPUTS_DIR = REPO_ROOT / "inputs"
+RESULTS_DIR = REPO_ROOT / "results"
+# Source paths are configurable via env vars so the repo is portable.
+# Defaults point at data bundled in the repo (see inputs/).
+INPUT_JSONL = Path(os.getenv("AIVA_BENCHMARK_INPUTS", INPUTS_DIR / "benchmark_inputs.jsonl"))
+VCF_DIR = Path(os.getenv("AIVA_VCF_DIR", INPUTS_DIR / "vcfs"))
 MANIFEST_PATH = INPUTS_DIR / "manifest.jsonl"
 
 
@@ -212,11 +213,16 @@ def main():
         if true_symbol is None:
             stats["gene_unresolved"] += 1
 
-        # VCF path
+        # VCF path — store relative to the repo root when possible so the
+        # manifest stays portable across machines/clones.
         vcf_path = VCF_DIR / f"simulated_{pid}_hg19.vcf"
         vcf_exists = vcf_path.exists()
         if not vcf_exists:
             stats["vcf_missing"] += 1
+        try:
+            vcf_path_str = str(vcf_path.resolve().relative_to(REPO_ROOT))
+        except ValueError:
+            vcf_path_str = str(vcf_path)
 
         entry = {
             "patient_id": pid,
@@ -225,7 +231,7 @@ def main():
             "category": rec.get("category"),
             "observed_hpo": observed,
             "negated_hpo": negated,
-            "vcf_path": str(vcf_path),
+            "vcf_path": vcf_path_str,
             "vcf_exists": vcf_exists,
             "true_gene_ensg": true_ensg,
             "true_gene_symbol": true_symbol,

@@ -12,3 +12,14 @@ README_Reproducibility.md
 # macOS metadata
 .DS_Store
 **/.DS_Store
+
+# Secrets / local env — keep .env.example tracked
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Tool installs + run artifacts (downloaded/generated, not tracked)
+tools/
+outputs/

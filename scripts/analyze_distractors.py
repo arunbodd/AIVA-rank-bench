@@ -21,15 +21,18 @@ errors vs. benchmark artefacts.
 
 import csv
 import json
+import os
 import re
 from pathlib import Path
 
 # ── Paths ─────────────────────────────────────────────────────────────────────
-BASE          = Path("/data/AIVA_Benchmarking")
-V2_PATH       = BASE / "AIVA-var-bench/Simulated_Datasets/Results/Final_Broad_Cat_noDiseaseName_v2.jsonl"
-INPUT_PATH    = BASE / "AIVA-var-bench/Simulated_Datasets/data/final_extracted.jsonl"
-HGNC_PATH     = BASE / "Lirical_benchmark/tools/lirical-cli-2.2.1/data/hgnc_complete_set.txt"
-MYGENE_CACHE  = BASE / "AIVA-var-bench/data/ensg_symbol_cache.json"
+# All configurable via env vars; defaults point at repo-bundled data.
+# HGNC and the mygene cache are optional (loaders degrade gracefully if absent).
+REPO_ROOT     = Path(__file__).resolve().parent.parent
+V2_PATH       = Path(os.getenv("AIVA_RESULTS", REPO_ROOT / "results" / "aiva_rankings.jsonl"))
+INPUT_PATH    = Path(os.getenv("AIVA_BENCHMARK_INPUTS", REPO_ROOT / "inputs" / "benchmark_inputs.jsonl"))
+HGNC_PATH     = Path(os.getenv("AIVA_HGNC_PATH", REPO_ROOT / "data" / "hgnc_complete_set.txt"))
+MYGENE_CACHE  = Path(os.getenv("AIVA_MYGENE_CACHE", REPO_ROOT / "data" / "ensg_symbol_cache.json"))
 
 # Normalise predicted gene strings: strip trailing "(ENSGXXX)" etc.
 _ID_IN_PARENS = re.compile(r'^(.+?)\s*\([^)]+\)\s*$')

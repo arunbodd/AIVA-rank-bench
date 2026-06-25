@@ -1,0 +1,45 @@
+##fileformat=VCFv4.2
+##reference=GRCh37/hg19
+##contig=<ID=1>
+##contig=<ID=2>
+##contig=<ID=3>
+##contig=<ID=4>
+##contig=<ID=5>
+##contig=<ID=6>
+##contig=<ID=7>
+##contig=<ID=8>
+##contig=<ID=9>
+##contig=<ID=10>
+##contig=<ID=11>
+##contig=<ID=12>
+##contig=<ID=13>
+##contig=<ID=14>
+##contig=<ID=15>
+##contig=<ID=16>
+##contig=<ID=17>
+##contig=<ID=18>
+##contig=<ID=19>
+##contig=<ID=20>
+##contig=<ID=21>
+##contig=<ID=22>
+##contig=<ID=X>
+##contig=<ID=Y>
+##contig=<ID=MT>
+##INFO=<ID=ensembl_id,Number=.,Type=String,Description="Stable Ensembl Gene Identifier v106">
+##INFO=<ID=name,Number=.,Type=String,Description="HGNC Gene Name">
+##INFO=<ID=alias,Number=.,Type=String,Description="former HGNC symbol">
+##INFO=<ID=deprecated_ensembl_id,Number=.,Type=String,Description="Ensembl ID that no longer maps to version 108">
+##INFO=<ID=typo,Number=.,Type=String,Description="Mistyped gene name in manually curated clinical report">
+##INFO=<ID=CADD,Number=1,Type=Float,Description="Phred-scaled CADD score">
+##INFO=<ID=PolyPhen2,Number=1,Type=Float,Description="VEP-assigned PolyPhen2 score">
+##INFO=<ID=MAF,Number=1,Type=Float,Description="Maximum gnomAD subpopulation AF or TOPMed AF">
+##INFO=<ID=CSQ,Number=.,Type=String,Description="Consequences assigned by Ensembl VEP">
+##INFO=<ID=biotype,Number=.,Type=String,Description="Ensembl Gene Biotype">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband
+1	167849353	.	C	G	.	PASS	ensembl_id=ENSG00000143199;name=ADCY10;CADD=36.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000143199;	GT:DP	0/1:40
+9	136310940	.	G	T	.	PASS	ensembl_id=ENSG00000160323;name=ADAMTS13;CADD=36.0;MAF=-1.0;CSQ=splice,missense;alias=ADAMTS13;alias=ADAMTS13;alias=ENSG00000160323;	GT:DP	0/1:40
+11	17741959	.	G	T	.	PASS	ensembl_id=ENSG00000129152;name=MYOD1;CADD=35.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000129152;	GT:DP	0/1:40
+15	55790405	.	C	G	.	PASS	ensembl_id=ENSG00000256061;name=DNAAF4;CADD=34.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000256061;	GT:DP	0/1:40
+19	50367221	.	C	G	.	PASS	ensembl_id=ENSG00000039650;name=PNKP;CADD=62.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000039650;	GT:DP	0/1:40

@@ -7,6 +7,7 @@ Generate comparison plots: LIRICAL vs Exomiser vs ClinPrior vs AIVA.
 import argparse
 import json
 import math
+import os
 import sys
 from collections import defaultdict
 from itertools import combinations
@@ -26,9 +27,10 @@ except ImportError:
 
 # ── paths ─────────────────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).resolve().parent.parent
-AIVA_ROOT = Path("/data/AIVA_Benchmarking/AIVA-var-bench/Simulated_Datasets")
-AIVA_RESULTS = AIVA_ROOT / "Results" / "Final_Broad_Cat_noDiseaseName_v2.jsonl"
-INPUT_JSONL = AIVA_ROOT / "data" / "final_extracted_broad_cat_v2_inputs.jsonl"
+# Configurable via env vars; defaults point at repo-bundled data. AIVA_RESULTS
+# is the AIVA prediction JSONL you generate with scripts/predict_genes.py.
+AIVA_RESULTS = Path(os.getenv("AIVA_RESULTS", REPO_ROOT / "results" / "aiva_rankings.jsonl"))
+INPUT_JSONL = Path(os.getenv("AIVA_BENCHMARK_INPUTS", REPO_ROOT / "inputs" / "benchmark_inputs.jsonl"))
 LIRICAL_RANKINGS   = REPO_ROOT / "results" / "lirical_rankings.jsonl"
 EXOMISER_RANKINGS  = REPO_ROOT / "results" / "exomiser_rankings.jsonl"
 CLINPRIOR_RANKINGS = REPO_ROOT / "results" / "clinprior_rankings.jsonl"

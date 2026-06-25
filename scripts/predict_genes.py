@@ -58,8 +58,11 @@ from pathlib import Path
 # that AIVA sometimes appends, e.g. "TEK (ENSG00000120156)" → "TEK"
 _ID_IN_PARENS = re.compile(r'^(.+?)\s*\([^)]+\)\s*$')
 
-HGNC_PATH = Path(__file__).parents[4] / "Lirical_benchmark" / "tools" / \
-    "lirical-cli-2.2.1" / "data" / "hgnc_complete_set.txt"
+# Optional HGNC complete set for Ensembl→symbol mapping; loader degrades
+# gracefully if absent. Override with AIVA_HGNC_PATH.
+HGNC_PATH = Path(os.getenv(
+    "AIVA_HGNC_PATH",
+    Path(__file__).resolve().parent.parent / "data" / "hgnc_complete_set.txt"))
 
 try:
     import httpx
@@ -84,12 +87,11 @@ if "/agents/chat/stream" not in API_URL:
     API_URL = f"{API_URL}/agents/chat/stream"
 
 SCRIPT_DIR   = Path(__file__).resolve().parent
-PROJECT_ROOT = SCRIPT_DIR.parent                          # Simulated_Datasets/
-BENCH_ROOT   = PROJECT_ROOT.parent                        # AIVA-var-bench/
-DEFAULT_INPUT    = PROJECT_ROOT / "data" / "final_extracted.jsonl"
-DEFAULT_RESULTS  = PROJECT_ROOT / "Results"
-VCF_DIR          = PROJECT_ROOT / "data" / "generated_vcfs" / "simulated"
-DISEASE_LIST     = PROJECT_ROOT / "data" / "simulated_diseases_list.txt"
+PROJECT_ROOT = SCRIPT_DIR.parent                          # repo root
+DEFAULT_INPUT    = Path(os.getenv("AIVA_BENCHMARK_INPUTS", PROJECT_ROOT / "inputs" / "benchmark_inputs.jsonl"))
+DEFAULT_RESULTS  = PROJECT_ROOT / "results"
+VCF_DIR          = Path(os.getenv("AIVA_VCF_DIR", PROJECT_ROOT / "inputs" / "vcfs"))
+DISEASE_LIST     = Path(os.getenv("AIVA_DISEASE_LIST", PROJECT_ROOT / "inputs" / "simulated_diseases_list.txt"))
 
 REQUEST_TIMEOUT  = 120.0
 CONCURRENCY      = int(os.getenv("CONCURRENCY_LIMIT", "3"))  # max simultaneous API calls
@@ -1050,9 +1052,9 @@ def parse_args():
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     p.add_argument("--input", default=str(DEFAULT_INPUT),
-                   help="Path to final_extracted.jsonl benchmark file.")
+                   help="Path to the benchmark inputs JSONL (default: inputs/benchmark_inputs.jsonl).")
     p.add_argument("--output", default=None,
-                   help="Output .jsonl file. Default: Results/<ablation>_predictions.jsonl")
+                   help="Output .jsonl file. Default: results/<ablation>_<prompt_style>_predictions.jsonl")
     p.add_argument("--ablation", choices=VALID_ABLATIONS, default="hpo+vcf",
                    help=(
                        "Ablation condition: "

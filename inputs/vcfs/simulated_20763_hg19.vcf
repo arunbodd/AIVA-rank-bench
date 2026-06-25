@@ -1,0 +1,58 @@
+##fileformat=VCFv4.2
+##reference=GRCh37/hg19
+##contig=<ID=1>
+##contig=<ID=2>
+##contig=<ID=3>
+##contig=<ID=4>
+##contig=<ID=5>
+##contig=<ID=6>
+##contig=<ID=7>
+##contig=<ID=8>
+##contig=<ID=9>
+##contig=<ID=10>
+##contig=<ID=11>
+##contig=<ID=12>
+##contig=<ID=13>
+##contig=<ID=14>
+##contig=<ID=15>
+##contig=<ID=16>
+##contig=<ID=17>
+##contig=<ID=18>
+##contig=<ID=19>
+##contig=<ID=20>
+##contig=<ID=21>
+##contig=<ID=22>
+##contig=<ID=X>
+##contig=<ID=Y>
+##contig=<ID=MT>
+##INFO=<ID=ensembl_id,Number=.,Type=String,Description="Stable Ensembl Gene Identifier v106">
+##INFO=<ID=name,Number=.,Type=String,Description="HGNC Gene Name">
+##INFO=<ID=alias,Number=.,Type=String,Description="former HGNC symbol">
+##INFO=<ID=deprecated_ensembl_id,Number=.,Type=String,Description="Ensembl ID that no longer maps to version 108">
+##INFO=<ID=typo,Number=.,Type=String,Description="Mistyped gene name in manually curated clinical report">
+##INFO=<ID=CADD,Number=1,Type=Float,Description="Phred-scaled CADD score">
+##INFO=<ID=PolyPhen2,Number=1,Type=Float,Description="VEP-assigned PolyPhen2 score">
+##INFO=<ID=MAF,Number=1,Type=Float,Description="Maximum gnomAD subpopulation AF or TOPMed AF">
+##INFO=<ID=CSQ,Number=.,Type=String,Description="Consequences assigned by Ensembl VEP">
+##INFO=<ID=biotype,Number=.,Type=String,Description="Ensembl Gene Biotype">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband
+1	6145308	.	G	T	.	PASS	ensembl_id=ENSG00000069424;name=KCNAB2;CADD=39.0;MAF=-1.0;CSQ=splice,missense;alias=KCNK2;alias=ENSG00000082482;	GT:DP	0/1:40
+1	11189795	.	C	A	.	PASS	ensembl_id=ENSG00000198793;name=MTOR;CADD=38.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000198793;	GT:DP	0/1:40
+1	43815030	.	G	T	.	PASS	ensembl_id=ENSG00000117400;name=MPL;CADD=37.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000117400;	GT:DP	0/1:40
+1	155582209	.	G	C	.	PASS	ensembl_id=ENSG00000125459;name=MSTO1;CADD=29.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000125459;	GT:DP	0/1:40
+2	188353064	.	C	G	.	PASS	ensembl_id=ENSG00000003436;name=TFPI;CADD=35.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000003436;	GT:DP	0/1:40
+2	211074920	.	C	G	.	PASS	ensembl_id=ENSG00000115361;name=ACADL;CADD=36.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000115361;	GT:DP	0/1:40
+6	123101436	.	G	T	.	PASS	ensembl_id=ENSG00000164434;name=FABP7;CADD=35.0;MAF=-1.0;CSQ=splice,missense;alias=FABP7;alias=FABP7;alias=ENSG00000164434;	GT:DP	0/1:40
+7	23030680	.	C	G	.	PASS	ensembl_id=ENSG00000122591;name=FAM126A;CADD=36.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000122591;	GT:DP	0/1:40
+7	114292345	.	G	T	.	PASS	ensembl_id=ENSG00000128573;name=FOXP2;CADD=37.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000128573;	GT:DP	0/1:40
+8	21982824	.	C	G	.	PASS	ensembl_id=ENSG00000168453;name=HR;CADD=35.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000168453;	GT:DP	0/1:40
+8	38273388	.	C	G	.	PASS	ensembl_id=ENSG00000077782;name=FGFR1;CADD=37.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000077782;	GT:DP	0/1:40
+12	121868104	.	T	A	.	PASS	ensembl_id=ENSG00000089094;name=KDM2B;CADD=41.0;MAF=-1.0;CSQ=missense;alias=KDM2B;alias=KDM2B;alias=ENSG00000089094;	GT:DP	0/1:40
+17	29324260	.	G	T	.	PASS	ensembl_id=ENSG00000181481;name=RNF135;CADD=33.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000181481;	GT:DP	0/1:40
+18	77107925	.	G	C	.	PASS	ensembl_id=ENSG00000166377;name=ATP9B;CADD=43.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000166377;	GT:DP	0/1:40
+19	13106678	.	G	T	.	PASS	ensembl_id=ENSG00000008441;name=NFIX;CADD=37.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000008441;	GT:DP	0/1:40
+22	46832071	.	C	T	.	PASS	ensembl_id=ENSG00000075275;name=CELSR1;CADD=36.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000075275;	GT:DP	0/1:40
+X	53458746	.	C	A	.	PASS	ensembl_id=ENSG00000072506;name=HSD17B10;CADD=37.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000072506;	GT:DP	0/1:40
+X	70338703	.	G	C	.	PASS	ensembl_id=ENSG00000184634;name=MED12;CADD=39.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000184634;	GT:DP	0/1:40

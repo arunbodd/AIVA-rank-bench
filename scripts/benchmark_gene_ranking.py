@@ -11,6 +11,7 @@ Usage:
 """
 
 import sys
+import os
 import json
 import math
 import re
@@ -38,12 +39,13 @@ from predict_genes import (
 # ──────────────────────────────────────────────────────────────
 # Paths and constants
 # ──────────────────────────────────────────────────────────────
-DEFAULT_DATA = Path(__file__).parent.parent / "data"
-DEFAULT_INPUT = DEFAULT_DATA / "final_extracted.jsonl"
-DISEASE_LIST = DEFAULT_DATA / "simulated_diseases_list.txt"
-DEFAULT_RESULTS = Path(__file__).parent.parent / "Results"
+REPO_ROOT = Path(__file__).resolve().parent.parent
+# Configurable via env vars; defaults point at repo-bundled data.
+DEFAULT_INPUT = Path(os.getenv("AIVA_BENCHMARK_INPUTS", REPO_ROOT / "inputs" / "benchmark_inputs.jsonl"))
+DISEASE_LIST = Path(os.getenv("AIVA_DISEASE_LIST", REPO_ROOT / "inputs" / "simulated_diseases_list.txt"))
+DEFAULT_RESULTS = REPO_ROOT / "results"
 
-HPO_LABELS_CACHE = DEFAULT_DATA / "hp_labels.json"
+HPO_LABELS_CACHE = DEFAULT_RESULTS / "hp_labels.json"
 # HPO OBO file download (we'll parse it to extract ID→label mapping)
 HPO_OBO_URL = "https://purl.obolibrary.org/obo/hp.obo"
 
@@ -489,7 +491,7 @@ def evaluate_only(results_path: Path):
 def parse_args():
     p = argparse.ArgumentParser(description="Gene prioritization benchmark (full-info mode)")
     p.add_argument("--input", default=str(DEFAULT_INPUT),
-                   help="Path to final_extracted.jsonl (default: Simulated_Datasets/data/final_extracted.jsonl)")
+                   help="Path to benchmark inputs JSONL (default: inputs/benchmark_inputs.jsonl)")
     p.add_argument("--output", default=str(DEFAULT_RESULTS / "ranked_predictions.jsonl"),
                    help="Output file for predictions (default: Results/ranked_predictions.jsonl)")
     p.add_argument("--hpo-labels", default=None,

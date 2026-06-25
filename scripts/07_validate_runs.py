@@ -23,14 +23,16 @@ Usage:
 
 import argparse
 import json
+import os
 import sys
 from collections import Counter
 from pathlib import Path
 
 # ── paths ─────────────────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).resolve().parent.parent
-AIVA_ROOT = Path("/data/AIVA_Benchmarking/AIVA-var-bench/Simulated_Datasets")
-AIVA_RESULTS = AIVA_ROOT / "Results" / "Final_Broad_Cat_noDiseaseName_v2.jsonl"
+# Configurable via env var; defaults to the AIVA prediction JSONL produced by
+# scripts/predict_genes.py (bring your own API key).
+AIVA_RESULTS = Path(os.getenv("AIVA_RESULTS", REPO_ROOT / "results" / "aiva_rankings.jsonl"))
 MANIFEST_PATH = REPO_ROOT / "inputs" / "manifest.jsonl"
 LIRICAL_RANKINGS = REPO_ROOT / "results" / "lirical_rankings.jsonl"
 LIRICAL_ERRORS = REPO_ROOT / "results" / "lirical_errors.jsonl"

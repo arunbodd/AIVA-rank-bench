@@ -2,3 +2,5 @@ scripts/classify_simulated.py
 METHODOLOGY_AUDIT.md
 README_Reproducibility.md
 .DS_Store
+
+.vscode/

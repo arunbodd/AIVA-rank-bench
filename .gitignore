@@ -1,6 +1,14 @@
 scripts/classify_simulated.py
 METHODOLOGY_AUDIT.md
 README_Reproducibility.md
-.DS_Store
 
 .vscode/
+
+# R session history
+.Rhistory
+.RData
+.Rproj.user/
+
+# macOS metadata
+.DS_Store
+**/.DS_Store

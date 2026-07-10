@@ -1,4 +1,8 @@
+scripts/classify_simulated.py
+METHODOLOGY_AUDIT.md
 README_Reproducibility.md
+
+.vscode/
 
 # R session history
 .Rhistory
@@ -8,3 +12,14 @@ README_Reproducibility.md
 # macOS metadata
 .DS_Store
 **/.DS_Store
+
+# Secrets / local env — keep .env.example tracked
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Tool installs + run artifacts (downloaded/generated, not tracked)
+tools/
+outputs/

@@ -1,0 +1,129 @@
+{
+  "lirical": {
+    "total_lines": 1396,
+    "duplicate_pids": {},
+    "manifest_pids": 1396,
+    "ranking_pids": 1396,
+    "missing_from_rankings": [],
+    "extra_in_rankings": [],
+    "rank_absent": 190,
+    "rank_absent_pct": 13.61,
+    "rank_distribution": {
+      "n": 1206,
+      "mean": 2.0357,
+      "median": 1.0,
+      "min": 1,
+      "max": 18,
+      "p25": 1.0,
+      "p75": 2.0
+    },
+    "rank_bins": {
+      "1": 831,
+      "3": 211,
+      "5": 75,
+      "10": 68,
+      "20": 21,
+      "50": 0,
+      ">50": 0
+    },
+    "n_genes_distribution": {
+      "n": 1396,
+      "mean": 10.937,
+      "median": 11.0,
+      "min": 3,
+      "max": 21,
+      "p25": 9.0,
+      "p75": 13.0
+    },
+    "zero_gene_cases": 0,
+    "top_prob_distribution": {
+      "n": 1396,
+      "mean": 0.0686,
+      "median": 0.0,
+      "min": 0.0,
+      "max": 1.0,
+      "p25": 0.0,
+      "p75": 0.0
+    },
+    "zero_top_prob_cases": 1110,
+    "error_log": {
+      "total_errors": 73,
+      "error_pids_in_rankings": 73,
+      "error_pids_missing_from_rankings": 0,
+      "error_causes": [
+        [
+          "Output JSON not created. stdout: ",
+          53
+        ],
+        [
+          "JSON parse error: Expecting property name enclosed in double",
+          7
+        ],
+        [
+          "JSON parse error: Expecting value: line 1 column 1 (char 0)",
+          3
+        ],
+        [
+          "JSON parse error: Unterminated string starting at: line 4270",
+          1
+        ],
+        [
+          "JSON parse error: Unterminated string starting at: line 3479",
+          1
+        ]
+      ]
+    }
+  },
+  "aiva": {
+    "total_cases": 1396,
+    "empty_predicted_genes": 0,
+    "unsorted_predicted_genes": 1,
+    "n_genes_distribution": {
+      "n": 1396,
+      "mean": 14.4556,
+      "median": 14.0,
+      "min": 5,
+      "max": 28,
+      "p25": 12.0,
+      "p75": 17.0
+    }
+  },
+  "exomiser": {
+    "total_lines": 1396,
+    "duplicate_pids": {},
+    "missing_from_rankings": 0,
+    "rank_absent": 131,
+    "rank_distribution": {
+      "n": 1265,
+      "mean": 6.4988,
+      "median": 6.0,
+      "min": 1,
+      "max": 28,
+      "p25": 1.0,
+      "p75": 11.0
+    },
+    "n_genes_distribution": {
+      "n": 1396,
+      "mean": 14.1447,
+      "median": 14.0,
+      "min": 5,
+      "max": 42,
+      "p25": 11.0,
+      "p75": 16.0
+    },
+    "error_log": {
+      "total_errors": 1
+    }
+  },
+  "cross_tool": {
+    "shared_pids_all_tools": 1396,
+    "category_counts": {
+      "known_gene_known_disease": 234,
+      "known_gene_new_disease": 244,
+      "new_gene_known_disease": 246,
+      "new_gene_new_disease": 250,
+      "known_gene_disease": 422
+    }
+  },
+  "validation_passed": true
+}

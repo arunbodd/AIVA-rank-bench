@@ -1,0 +1,54 @@
+##fileformat=VCFv4.2
+##reference=GRCh37/hg19
+##contig=<ID=1>
+##contig=<ID=2>
+##contig=<ID=3>
+##contig=<ID=4>
+##contig=<ID=5>
+##contig=<ID=6>
+##contig=<ID=7>
+##contig=<ID=8>
+##contig=<ID=9>
+##contig=<ID=10>
+##contig=<ID=11>
+##contig=<ID=12>
+##contig=<ID=13>
+##contig=<ID=14>
+##contig=<ID=15>
+##contig=<ID=16>
+##contig=<ID=17>
+##contig=<ID=18>
+##contig=<ID=19>
+##contig=<ID=20>
+##contig=<ID=21>
+##contig=<ID=22>
+##contig=<ID=X>
+##contig=<ID=Y>
+##contig=<ID=MT>
+##INFO=<ID=ensembl_id,Number=.,Type=String,Description="Stable Ensembl Gene Identifier v106">
+##INFO=<ID=name,Number=.,Type=String,Description="HGNC Gene Name">
+##INFO=<ID=alias,Number=.,Type=String,Description="former HGNC symbol">
+##INFO=<ID=deprecated_ensembl_id,Number=.,Type=String,Description="Ensembl ID that no longer maps to version 108">
+##INFO=<ID=typo,Number=.,Type=String,Description="Mistyped gene name in manually curated clinical report">
+##INFO=<ID=CADD,Number=1,Type=Float,Description="Phred-scaled CADD score">
+##INFO=<ID=PolyPhen2,Number=1,Type=Float,Description="VEP-assigned PolyPhen2 score">
+##INFO=<ID=MAF,Number=1,Type=Float,Description="Maximum gnomAD subpopulation AF or TOPMed AF">
+##INFO=<ID=CSQ,Number=.,Type=String,Description="Consequences assigned by Ensembl VEP">
+##INFO=<ID=biotype,Number=.,Type=String,Description="Ensembl Gene Biotype">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	proband
+1	196759333	.	T	G	.	PASS	ensembl_id=ENSG00000116785;name=CFHR3;CADD=25.1;MAF=-1.0;CSQ=missense;alias=ENSG00000116785;	GT:DP	0/1:40
+2	3687921	.	G	T	.	PASS	ensembl_id=ENSG00000118004;name=COLEC11;CADD=38.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000118004;	GT:DP	0/1:40
+2	70443340	.	C	A	.	PASS	ensembl_id=ENSG00000116001;name=TIA1;CADD=36.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000116001;	GT:DP	0/1:40
+3	15520484	.	C	G	.	PASS	ensembl_id=ENSG00000206561;name=COLQ;CADD=39.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000206561;	GT:DP	0/1:40
+4	176733342	.	C	A	.	PASS	ensembl_id=ENSG00000150625;name=GPM6A;CADD=37.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000150625;	GT:DP	0/1:40
+4	186066404	.	G	T	.	PASS	ensembl_id=ENSG00000151729;name=SLC25A4;CADD=35.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000151729;	GT:DP	0/1:40
+5	176024093	.	A	G	.	PASS	ensembl_id=ENSG00000169258;name=GPRIN1;CADD=32.0;MAF=-1.0;CSQ=missense;alias=GRIN1;alias=ENSG00000176884;	GT:DP	0/1:40
+8	20062050	.	G	T	.	PASS	ensembl_id=ENSG00000147416;name=ATP6V1B2;CADD=37.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000147416;	GT:DP	0/1:40
+9	131289804	.	G	T	.	PASS	ensembl_id=ENSG00000119392;name=GLE1;CADD=38.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000119392;	GT:DP	0/1:40
+11	124619604	.	C	A	.	PASS	ensembl_id=ENSG00000019102;name=VSIG2;CADD=36.0;MAF=-1.0;CSQ=splice,missense;alias=CTH;alias=ENSG00000116761;	GT:DP	0/1:40
+17	4645786	.	G	A	.	PASS	ensembl_id=ENSG00000141497;name=ZMYND15;CADD=36.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000141497;	GT:DP	0/1:40
+19	35622290	.	C	T	.	PASS	ensembl_id=ENSG00000153902;name=LGI4;CADD=34.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000153902;	GT:DP	0/1:40
+19	35657074	.	G	T	.	PASS	ensembl_id=ENSG00000089327;name=FXYD5;CADD=36.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000089327;	GT:DP	0/1:40
+X	69811601	.	C	A	.	PASS	ensembl_id=ENSG00000120498;name=TEX11;CADD=36.0;MAF=-1.0;CSQ=splice,missense;alias=ENSG00000120498;	GT:DP	0/1:40

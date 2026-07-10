@@ -1,0 +1,15 @@
+# Python dependencies for AIVA-rank-bench
+# Install:  pip install -r requirements.txt
+# Tested with Python >= 3.9
+
+# ── Core ──────────────────────────────────────────────────────────────────────
+httpx>=0.24          # AIVA API client (predict_genes.py, benchmark_gene_ranking.py)
+numpy>=1.21          # metrics + plotting (04_compare_metrics.py, 05_plot_comparison.py)
+matplotlib>=3.5      # figures (05_plot_comparison.py)
+
+# ── Optional (graceful fallback if absent) ────────────────────────────────────
+tqdm>=4.0            # progress bars for the run scripts (02, 06, 08)
+python-dotenv>=1.0   # load AIVA_API_* from a local .env (predict_genes.py)
+
+# Note: ENSG→symbol resolution in 01_prepare_inputs.py uses the mygene.info REST
+# API via the standard library (urllib) — no extra package required.

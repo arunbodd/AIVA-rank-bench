@@ -37,7 +37,8 @@ That's the whole loop: **predict → score**. Inputs (HPO terms + per-case VCFs)
 python scripts/predict_genes.py \
     --ablation hpo+vcf \        # which evidence to send: hpo, vcf, hpo+vcf, ...
     --prompt-style aiva \       # prompt template (default: aiva)
-    --input inputs/benchmark_inputs.jsonl   # default; the 1,396-case set
+    --input inputs/benchmark_inputs.jsonl \  # default; the 1,396-case set
+    --hpo-labels inputs/hpo_labels.tsv       # optional: send phenotype names, not bare HP IDs
 # Output: results/<ablation>_<prompt_style>_predictions.jsonl
 ```
 
@@ -64,7 +65,11 @@ AIVA-rank-bench/
 ├── inputs/
 │   ├── benchmark_inputs.jsonl      # 1,396-case benchmark (HPO terms, true gene) — AIVA input
 │   ├── manifest.jsonl              # per-case HPO + true gene + VCF path (repo-relative)
+│   ├── simulated_diseases_list.txt # Orphanet disease_id → name (used by the *+disease ablations)
+│   ├── hpo_labels.tsv              # HP:ID → label from hp.obo 2026-09-01 (optional, --hpo-labels)
 │   └── vcfs/                       # 1,396 per-case VCFs (simulated_<id>_hg19.vcf)
+├── data/
+│   └── hgnc_complete_set.txt       # HGNC Ensembl → symbol map (true-gene resolution)
 ├── results/
 │   ├── lirical_rankings.jsonl      # baseline rankings (precomputed, for comparison)
 │   ├── exomiser_rankings.jsonl
